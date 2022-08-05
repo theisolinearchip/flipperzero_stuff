@@ -6,7 +6,7 @@ Some things [Flipper Zero](https://github.com/flipperdevices/flipperzero-firmwar
 
 Under the `/applications` folder there's a (small) collection of different apps (__two__, at least for now :D ):
 
-- `Dec / Hex Converter`, a decimal to hexadecimal (and vice versa) converter with "real-time" conversion and built-in keyboard
+- `Dec/Hex Converter`, a decimal to hexadecimal (and vice versa) converter with "real-time" conversion and built-in keyboard
 - `Conway's Game of Life`, simple implementation on a full-screen 32 x 16 cell grid
 
 Each app can be added as a __plugin__ on a regular [flipperzero firmware source](https://github.com/flipperdevices/flipperzero-firmware):
@@ -45,6 +45,13 @@ $ ./fbt --with-updater COMPACT=1 DEBUG=0 VERBOSE=1 updater_package
 - The `order` option on the `application.fam` for each app sets the _priority order_ on the menu list
 - Nope, currently it's not possible to "install apps" without reflashing the entire firmware with everything inside :(
 - My idea is to keep everything here up-to-date with the new firmware releases, so let me know if something doesn't work or anything related!
+- To work on a full __flipperzero source folder__ while having my stuff in my own repo I like to create symlinks to the folders inside the `/applications` main dir:
+```
+~/flipper_zero/flipperzero-firmware/applications$ ln -s ~/flipper_zero/flipperzero_stuff/dec_hex_converter/ dec_hex_converter
+~/flipper_zero/flipperzero-firmware/applications$ ln -s ~/flipper_zero/flipperzero_stuff/game_of_life/ game_of_life
+
+and so on...
+```
 
 ## Links and references
 
@@ -54,4 +61,4 @@ little bit outdated, but combined with any other "current" app (like the _Snake 
 
 ## Contact
 
-You can reach me on [twitter](https://twitter.com/isolinealchip), [instagram](https://instagram.com/theisolinealchip) or by [mail](mailto:albert.gonzalez.fdez-at-gmail-dot-com)
+You can reach me on [twitter](https://twitter.com/isolinearchip), [instagram](https://instagram.com/theisolinearchip) or by [mail](mailto:albert.gonzalez.fdez-at-gmail-dot-com)
