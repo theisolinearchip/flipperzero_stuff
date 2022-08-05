@@ -48,8 +48,8 @@ $ ./fbt --with-updater COMPACT=1 DEBUG=0 VERBOSE=1 updater_package
 
 ## Links and references
 
-- `[Official firmware](https://github.com/flipperdevices/flipperzero-firmware)`
-- `[Hello World Tutorial](https://github.com/DroomOne/Flipper-Plugin-Tutorial)`, I used this one as the starting point for my firsts projects. It may be a
+- [Official firmware](https://github.com/flipperdevices/flipperzero-firmware)
+- [Hello World Tutorial](https://github.com/DroomOne/Flipper-Plugin-Tutorial), I used this one as the starting point for my firsts projects. It may be a
 little bit outdated, but combined with any other "current" app (like the _Snake minigame_) it should be more than enough to start tinkering with the system.
 
 ## Contact
