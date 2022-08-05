@@ -47,8 +47,8 @@ $ ./fbt --with-updater COMPACT=1 DEBUG=0 VERBOSE=1 updater_package
 - My idea is to keep everything here up-to-date with the new firmware releases, so let me know if something doesn't work or anything related!
 - To work on a full __flipperzero source folder__ while having my stuff in my own repo I like to create symlinks to the folders inside the `/applications` main dir:
 ```
-~/flipper_zero/flipperzero-firmware/applications$ ln -s ~/flipper_zero/flipperzero_stuff/dec_hex_converter/ dec_hex_converter
-~/flipper_zero/flipperzero-firmware/applications$ ln -s ~/flipper_zero/flipperzero_stuff/game_of_life/ game_of_life
+~/flipper_zero/flipperzero-firmware/applications$ ln -s ~/flipper_zero/flipperzero_stuff/applications/dec_hex_converter/ dec_hex_converter
+~/flipper_zero/flipperzero-firmware/applications$ ln -s ~/flipper_zero/flipperzero_stuff/applications/game_of_life/ game_of_life
 
 and so on...
 ```
