@@ -6,8 +6,8 @@ Some things [Flipper Zero](https://github.com/flipperdevices/flipperzero-firmwar
 
 Under the `/applications` folder there's a (small) collection of different apps (__two__, at least for now :D ):
 
-- `Dec/Hex Converter`, a decimal to hexadecimal (and vice versa) converter with "real-time" conversion and built-in keyboard
-- `Conway's Game of Life`, simple implementation on a full-screen 32 x 16 cell grid
+- `Dec/Hex Converter`, a decimal to hexadecimal (and vice versa) converter with "real-time" conversion and built-in keyboard ([some pics here!](https://twitter.com/isolinearchip/status/1553824011620073472))
+- `Conway's Game of Life`, simple implementation on a full-screen 32 x 16 cell grid ([video and pics here!](https://twitter.com/isolinearchip/status/1553094272961974272))
 
 Each app can be added as a __plugin__ on a regular [flipperzero firmware source](https://github.com/flipperdevices/flipperzero-firmware):
 
