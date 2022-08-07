@@ -3,20 +3,20 @@
 #include <input/input.h>
 #include <stdlib.h>
 
-#define DEC_HEX_CONVERTER_NUMBER_DIGITS		7
-#define DEC_HEX_CONVERTER_KEYS		 		18
-#define DEC_HEX_CONVERTER_KEY_DEL			16
-// #define DEC_HEX_CONVERTER_KEY_SWAP		17 // actually not used...
+#define DEC_HEX_CONVERTER_NUMBER_DIGITS     9
+#define DEC_HEX_CONVERTER_KEYS              18
+#define DEC_HEX_CONVERTER_KEY_DEL           16
+// #define DEC_HEX_CONVERTER_KEY_SWAP       17 // actually not used...
 
-#define DEC_HEX_CONVERTER_CHAR_DEL			'<'
-#define DEC_HEX_CONVERTER_CHAR_SWAP			's'
-#define DEC_HEX_CONVERTER_CHAR_MODE			'#'
-#define DEC_HEX_CONVERTER_CHAR_OVERFLOW		'#'
+#define DEC_HEX_CONVERTER_CHAR_DEL          '<'
+#define DEC_HEX_CONVERTER_CHAR_SWAP         's'
+#define DEC_HEX_CONVERTER_CHAR_MODE         '#'
+#define DEC_HEX_CONVERTER_CHAR_OVERFLOW     '#'
 
-#define DEC_HEX_CONVERTER_KEY_FRAME_MARGIN	3
-#define DEC_HEX_CONVERTER_KEY_CHAR_HEIGHT	8
+#define DEC_HEX_CONVERTER_KEY_FRAME_MARGIN  3
+#define DEC_HEX_CONVERTER_KEY_CHAR_HEIGHT   8
 
-#define DEC_HEX_MAX_SUPORTED_DEC_INT		9999999
+#define DEC_HEX_MAX_SUPORTED_DEC_INT        999999999
 
 typedef enum {
 	EventTypeKey,
@@ -109,7 +109,7 @@ void dec_hex_converter_logic_convert_number(DecHexConverterState* const dec_hex_
 		s_ptr = dec_hex_converter_state->hex_number;
 		d_ptr = dec_hex_converter_state->dec_number;
 
-		long int a = strtol(s_ptr, NULL, 16);
+		int a = strtol(s_ptr, NULL, 16);
 		if (a > DEC_HEX_MAX_SUPORTED_DEC_INT) {
 			// draw all "###" if there's an overflow
 			for (int j = 0; j < DEC_HEX_CONVERTER_NUMBER_DIGITS; j++) {
