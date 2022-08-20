@@ -1,11 +1,11 @@
 # MultiConverter 
 
-An expanded version of my previous __Dec/Hex Converter__, this time allowing more units and a _(probably poorly designed from a design-point-of-view)_ selector mode
+An expanded version of my previous __Dec/Hex Converter__, this time allowing more units and a _(probably poorly made from a design-point-of-view)_ selector mode
 to swap between different unit groups.
 
 I wrote it with the idea of _expanding the unit list_ on mind, so adding new ones it's a matter of increasing an array of constants + defining the proper conversion functions.
 
-(Actually the whole project is more about making "the framework" to add the units rather than providing _ALL_ of them : D)
+(Actually the whole project is more about "making the framework" rather than providing _ALL_ of the possible units : D)
 
 ## Current conversions
 
@@ -47,10 +47,10 @@ And that's it! The system will fetch the new units and display it!
 
 This is an initial release, so expect some bugs and issues (also I don't work with C that much, so there're probably lots of things that can be improved and/or changed!).
 
-- I've noticed some small decimal variations when "going deep" with some units (like converting __miles__ to __centimeters__ and things like that); probably due to the precision-level required.
+- I've noticed some small decimal variations when "going deep" with some units (like converting __miles__ to __centimeters__ and things like that); probably due to the precision-level required. Need to check that.
 - Pending: improve overflow checks.
 - The way some long numbers are shown could probably be improved to look fancier.
-- Both _origin_ and _destination buffers_ are the same. The destination one could probably be longer in order to avoid certain __overflow scenarios_.
+- Both _origin_ and _destination buffers_ are the same. The destination one could probably be longer in order to avoid certain _overflow scenarios_.
 - The GUI needs improvement too: there's a whole __widget/views system__ built in the Flipper that allows things like setting up keys, showing "Save/Back/Cancel" messages with
-callbacks and stuff like that. Didn't know anything about them, so I move on with something more basic (which is probably fince since it's not a "very big project"); but
+callbacks and stuff like that. Didn't know anything about them, so I moved on with something more basic (which is probably fince since it's not a "very big project"); but
 a more "standard" way with the regular GUI stuff provided by the firmware will be interesting...
