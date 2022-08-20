@@ -4,9 +4,11 @@ Some things [Flipper Zero](https://github.com/flipperdevices/flipperzero-firmwar
 
 ## Apps
 
-Under the `/applications` folder there's a (small) collection of different apps (__two__, at least for now :D ):
+Under the `/applications` folder there's a (small) collection of different apps:
 
-- `Dec/Hex Converter`, a decimal to hexadecimal (and vice versa) converter with "real-time" conversion and built-in keyboard ([some pics here!](https://twitter.com/isolinearchip/status/1553824011620073472))
+- `MultiConverter`, a multi-unit converter written with an easy and expandable system for adding new units and conversion methods (it has it's own [README file](https://github.com/theisolinearchip/flipperzero_stuff/tree/main/applications/multi_converter) with more info)
+- `Dec/Hex Converter`, a decimal to hexadecimal (and vice versa) converter with "real-time" conversion and built-in keyboard ([some pics here!](https://twitter.com/isolinearchip/status/1553824011620073472)). Updates on this one will be probably stopped since the __MultiConverter__ covers
+this scenario (and lots more with more units!)
 - `Conway's Game of Life`, simple implementation on a full-screen 32 x 16 cell grid ([video and pics here!](https://twitter.com/isolinearchip/status/1553094272961974272))
 
 Each app can be added as a __plugin__ on a regular [flipperzero firmware source](https://github.com/flipperdevices/flipperzero-firmware):
